@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #filterInput {
+    width: 280px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0d0c0c;
+    border-radius: 5px;
+  }
+  
+
+  #filterInput::placeholder {
+    color: #999; 
+  }
+  button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #sortSelect {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none; 
+    cursor: pointer;
+  }
+  
+  #sortSelect:hover {
+    border-color: #999; 
+  }
+  
+  #sortSelect option {
+    background-color: #fff;
+  }
+  
+ 
+  #sortSelect::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+  }
+  
+  
+  #sortSelect option {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  #sortSelect option:hover {
+    background-color: #f0f0f0;
+  }
+  .userCard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .userCard h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .userCard p {
+    color: #666;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+    
+    .userCard {
+      padding: 8px;
+    }
+    
+    button {
+      display: block;
+      width: calc(100% - 40px); 
+      margin: 0 auto 20px; 
+    }
+    
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .controls {
+      flex-direction: column;
+    }
+  
+    .controls label {
+      margin-bottom: 5px;
+    }
+  
+    #filterInput {
+      margin-top: 0;
+    }
+    #sortSelect {
+      margin-bottom: 20px;
+    }
+  }
